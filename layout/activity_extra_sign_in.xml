@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExtraSignInActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Type"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <RadioGroup
+            android:id="@+id/ra_rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_radio_button_height"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/upa_bt_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upa_til_mobile">
+        <RadioButton
+            android:id="@+id/ra_rb_customer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/profile_radio_button_marginStartEnd"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/customer"
+            android:textColor="@drawable/drawable_gender_tab_text_color_selector"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/ra_rb_shoper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/profile_radio_button_marginStartEnd"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/shoper"
+            android:textColor="@drawable/drawable_gender_tab_text_color_selector"
+            android:textStyle="bold" />
+    </RadioGroup>
+    </LinearLayout>
+
+
+</ScrollView>
